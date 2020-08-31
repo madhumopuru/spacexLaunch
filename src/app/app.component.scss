@@ -1,0 +1,227 @@
+.main{
+    h3{
+        margin: 0px;
+    }
+    .filter_div{
+        width: calc(20% - 20px);
+        float: left;
+        background: #fff;
+        padding: 5px;
+        margin: 5px;
+        box-shadow: 0 1px 2px rgba(0,0,0,0.15);
+        transition: box-shadow 0.3s ease-in-out;
+        border-radius: 5px;
+        @media screen and (max-width: 700px){
+            width: calc(100% - 20px);
+        }
+        @media screen and(min-width: 700px) and (max-width: 1024px){
+            width: calc(40% - 20px);
+        }
+        h5{
+            margin: 0px;
+            font-size: 17px;
+        }
+        .year_filter{
+            p{
+                margin: 0px;
+                font-size: 13px;
+                text-align: center;
+                font-weight: 600;
+                text-decoration: underline;
+                padding-bottom: 5px;
+            
+            }
+            .years{
+                width: 100%;
+                float: left;
+                label{
+                    width: calc(50% - 40px);
+                    float: left;
+                    margin: 5px 20px;
+                    text-align: center;
+                    background: #6ccc6f;
+                    padding: 5px 0px;
+                    cursor: pointer;
+                    border-radius: 5px;
+                    text-transform: capitalize;
+                    &:hover{
+                        background: #d2d2d2;
+                    }
+                }
+            }
+        }
+
+        .suceefulLaunch_filter{
+            p{
+                margin: 0px;
+                font-size: 13px;
+                text-align: center;
+                font-weight: 600;
+                text-decoration: underline;
+                padding-bottom: 5px;
+            
+            }
+            .true_false{
+                width: 100%;
+                float: left;
+                label{
+                    width: calc(50% - 40px);
+                    float: left;
+                    margin: 5px 20px;
+                    text-align: center;
+                    background: #6ccc6f;
+                    padding: 5px 0px;
+                    cursor: pointer;
+                    border-radius: 5px;
+                    &:hover{
+                        background: #d2d2d2;
+                    }
+                }
+            }
+        }
+
+        .suceefulLaunnd_filter{
+            p{
+                margin: 0px;
+                font-size: 13px;
+                text-align: center;
+                font-weight: 600;
+                text-decoration: underline;
+                padding-bottom: 5px;
+            
+            }
+            .true_false{
+                width: 100%;
+                float: left;
+                label{
+                    width: calc(50% - 40px);
+                    float: left;
+                    margin: 5px 20px;
+                    text-align: center;
+                    background: #6ccc6f;
+                    padding: 5px 0px;
+                    cursor: pointer;
+                    border-radius: 5px;
+                    &:hover{
+                        background: #d2d2d2;
+                    }
+                }
+            }
+        }
+       
+    }
+    .spacex_div{
+        width: calc(80% - 20px);
+        float: left;
+        padding: 0px 5px;
+        margin: 0px 5px;
+        @media screen and (max-width: 700px){
+            width: calc(100% - 0px);
+            padding: 0px;
+            margin: 0px;
+        }
+        @media screen and(min-width: 700px) and (max-width: 1024px){
+            width: calc(60% - 20px);
+        }
+        .spacex_list{
+            width: calc(25% - 30px);
+            float: left;
+            padding: 10px;
+            margin: 5px;
+            background: #fff;
+            border-radius: 5px;
+            cursor: pointer;
+            box-shadow: 0 1px 2px rgba(0,0,0,0.15);
+            transition: box-shadow 0.3s ease-in-out;
+            @media screen and (max-width: 700px){
+                width: calc(100% - 30px);
+            }
+            @media screen and(min-width: 700px) and (max-width: 1024px){
+                width: calc(50% - 30px);
+            }
+            &:hover {
+                box-shadow: 0 5px 15px rgba(0,0,0,0.3);
+              }
+            .img_div{
+                width: 100%;
+                float: left;
+                background: #ececec;
+                padding: 10px 0px;
+                img{
+                    width: 100%;
+                    float: left;
+                }
+            }
+            p{
+                margin: 5px 0px;
+                width: 100%;
+                float: left;
+                color: #326fca;
+                white-space: nowrap;
+            }
+            .mison_ids{
+                label{
+                    font-size: 14px;
+                    font-weight: 600;
+                }
+                ul{
+                    margin: 5px 0px;
+                    li{
+                        color: #326fca;
+                    }
+                }
+            }
+            .launch_year{
+                margin: 5px 0px;
+                label{
+                    font-size: 14px;
+                    font-weight: 600;
+                    width: auto;
+                    float: left; 
+                }
+                span{
+                    color: #326fca; 
+                }
+            }
+            .launch_success{
+                margin: 5px 0px;
+                label{
+                    font-size: 14px;
+                    font-weight: 600;
+                    width: auto;
+                    float: left; 
+                }
+                span{
+                    color: #326fca; 
+                }
+            }
+            .landing_success{
+                margin: 5px 0px;
+                label{
+                    font-size: 14px;
+                    font-weight: 600;
+                    width: auto;
+                    float: left; 
+                }
+                span{
+                    color: #326fca; 
+                }
+            }
+        }
+    }
+    .developed_by{
+        width: 100%;
+        float: left;
+        text-align: center;
+        margin: 10px 0px;
+        label{
+            font-size: 14px;
+            font-weight: 600;
+            span{
+                font-weight: normal;
+                font-size: 13px;
+            }
+        }
+    }
+}
+

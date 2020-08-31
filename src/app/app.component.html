@@ -1,0 +1,55 @@
+
+<div class="main">
+  <h3>SpaceX Launch Programs</h3>
+  <div class="filter_div">
+    <h5>Filters</h5>
+    <div class="year_filter">
+      <p>Lunch Year</p>
+       <div class="years">
+        <label (click)="getYear($event.target.innerText)" *ngFor="let year of YearArry">{{year}}</label>
+      </div>
+    </div>
+    <div class="suceefulLaunch_filter">
+      <p>Successful Launch</p>
+       <div class="true_false">
+        <label (click)="launchSuccess($event.target.innerText)" *ngFor="let lauch of launch">{{lauch}}</label>
+      </div>
+    </div>
+    <div class="suceefulLaunnd_filter">
+      <p>Successful Landing</p>
+       <div class="true_false">
+        <label (click)="landSuccess($event.target.innerText)" *ngFor="let landing of landing">{{landing}}</label>
+      </div>
+    </div>
+  </div>
+  <div class="spacex_div">
+    <div class="spacex_list" *ngFor="let spcelist of spackex">
+      <div class="img_div">
+        <img src={{spcelist.links.mission_patch_small}}>
+      </div>
+      
+      <p>{{spcelist.mission_name}} &nbsp;#{{spcelist.flight_number}}</p>
+      <div class="mison_ids"> 
+           <label>Mission Ids:</label>
+           <ul>
+            <li *ngIf="spcelist.mission_id.length == 0">No mission ids</li>
+             <li *ngIf="spcelist.mission_id.length != 0">{{spcelist.mission_id}}</li>
+           </ul>
+      </div>
+      <div class="launch_year">
+        <label>Launch year : &nbsp;</label>
+        <span>{{spcelist.launch_year}}</span>
+      </div>
+      <div class="launch_success">
+        <label>Successful Launch  : &nbsp;</label>
+        <span>{{spcelist.launch_success}}</span>
+      </div>
+      <div class="landing_success">
+        <label>Successful Launding  : &nbsp;</label>
+        <span>{{spcelist.is_tentative}}</span>
+      </div>
+    </div>
+  </div>
+  <footer class="developed_by"><label>Devloped by : <span>Madhu Sudhan</span></label></footer>
+</div>
+
